@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+  margin:0;
+  outline:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Righteous', cursive;
+}
+
+html,body,#root{
+  height:100%;
+  font-family: 'Righteous', cursive;
+}
+body::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+body::-webkit-scrollbar-button:start:decrement,
+body::-webkit-scrollbar-button🔚increment {
+  display: block;
+  height: 0;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-track-piece {
+  background-color: #ffffff;
+  opacity: 0.1;
+  -webkit-border-radius: 0;
+  -webkit-border-bottom-right-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: #ccc;
+  -webkit-border-radius: 8px;
+}
+
+button{
+  background:transparent;
+  border:none;
+  color:#fff;
+  cursor:pointer;
+}
