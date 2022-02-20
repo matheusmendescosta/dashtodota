@@ -1,7 +1,14 @@
 export default function herosFunctions(){
-    fetch('https://api.opendota.com/api/players/159992731/heroes')
-    .then(res => res.json())
-    .then(json => { 
-        console.log(json)
-    })
+
+    async function principalHeroes(url){
+        const heroesResponse = await fetch(url);
+        const heroesJSON = await heroesResponse.json();
+
+        heroesJSON.forEach(heroes => {
+            console.log(heroes)
+        });
+    }
+    
+principalHeroes('https://api.opendota.com/api/players/159992731/heroes');
+
 }
