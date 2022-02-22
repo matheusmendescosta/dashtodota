@@ -38,11 +38,46 @@ body::-webkit-scrollbar-thumb:vertical {
   -webkit-border-radius: 8px;
 }
 
-button{
-  background:transparent;
-  border:none;
-  color:#fff;
-  cursor:pointer;
+.container_head{
+  border: 1px solid blue;
+}
+
+.container_img_head{
+  border: 1px solid red;
+  float: left;
+}
+
+.container_text_head{
+  border: 3px solid green;
+}
+
+.container{
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+.container_funcoes{
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.container_funcao_hero{
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_hero_img_text{
+  border: 1px solid red;
+}
+
+.container_table{
+
+}
+
+.container_title_table{
+  padding-bottom: 3rem;
+  text-align: center;
 }
 
 table{ /** Faz o estilo da tabela inteira. **/
