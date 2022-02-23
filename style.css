@@ -11,6 +11,9 @@
 html,body,#root{
   height:100%;
   font-family: 'Righteous', cursive;
+  background-image: url('/assets/bg.jpg');
+  background-size: cover;
+  color: #ffffff;
 }
 body::-webkit-scrollbar {
   width: 9px;
@@ -39,7 +42,8 @@ body::-webkit-scrollbar-thumb:vertical {
 }
 
 .container_head{
-  border: 1px solid blue;
+  border: 4px solid blue;
+  height: 95vh;
 }
 
 .container_img_head{
@@ -59,6 +63,8 @@ body::-webkit-scrollbar-thumb:vertical {
   padding-top: 2rem;
   padding-bottom: 3rem;
   text-align: center;
+  height: 100vh;
+  border: 1px solid yellow;
 }
 
 .container_funcao_hero{
@@ -72,7 +78,8 @@ body::-webkit-scrollbar-thumb:vertical {
 }
 
 .container_table{
-
+  height: 100vh;
+  border: 1px solid yellow;
 }
 
 .container_title_table{
