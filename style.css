@@ -42,8 +42,9 @@ body::-webkit-scrollbar-thumb:vertical {
 }
 
 .container_head{
-  border: 4px solid blue;
+  /**border: 3px solid green;**/
   height: 95vh;
+  padding: 3rem 5rem 5rem 5rem;
 }
 
 .container_img_head{
