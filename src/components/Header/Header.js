@@ -1,16 +1,19 @@
-import axios from "axios";
+//import axios from "axios";
 import React, { useEffect, useState } from "react";
-import "./Header.css"
+import Api from '../../Api'
+import "./Header.css";
 
 const Header = () => {
 
     const [profile, setProfile] = useState("");
 
+    async function initApi(){
+        let getProfile = await Api.getProfile();
+        setProfile(getProfile);
+    }
+
     useEffect(() => {
-        axios.get('https://api.opendota.com/api/players/159992731')
-            .then(res => {
-                setProfile(res.data);
-            })
+        initApi();
     }, [])
 
     return (<div className="">
