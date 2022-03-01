@@ -11,7 +11,7 @@
 html,body,#root{
   height:100%;
   font-family: 'Righteous', cursive;
-  background-image: url('/assets/bg.jpg');
+  background: black;
   background-size: cover;
   color: #ffffff;
 }
