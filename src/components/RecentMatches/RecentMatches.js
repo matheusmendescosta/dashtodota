@@ -11,7 +11,7 @@ const RecentMatches = () => {
         
         const heroimg = getMatche.map(element => {
             const heroHeros = getHeroStats.filter(heroStats =>{
-                return element.hero_id == heroStats.id;
+                return element.hero_id === heroStats.id;
             })
             element.img = heroHeros[0].img;
             return element;
@@ -69,7 +69,6 @@ const RecentMatches = () => {
                                     </tr>
                                 )
                             })
-
                         }
                     </tbody>
                 </table>

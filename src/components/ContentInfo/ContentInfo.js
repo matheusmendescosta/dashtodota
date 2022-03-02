@@ -8,6 +8,25 @@ const ContentInfo = () => {
     async function initApi() {
         let getHero = await Api.getHeroes();
         setHeroes(getHero);
+
+        const heroID = ["20","8","16"];
+        const heroSelect = heroes.filter((hero)=>{
+            const variavelHero = heroID.indexOf(hero.hero_id);
+
+            if (variavelHero !== -1){
+                return true;
+            }
+            // const heroTop = heroSelect[0];
+            // const heroMid = heroSelect[1];
+            // const heroBot = heroSelect[2];
+
+            // console.log(heroTop);
+            // console.log(heroMid);
+            console.log(heroSelect);
+        
+        })
+        // console.log(heroID);
+        // console.log(heroSelect);
     }
 
     useEffect(() => {
@@ -20,7 +39,9 @@ const ContentInfo = () => {
             <div className="card h-100">
                 <div className="card-body">
                     <h2 className="card-title">TOP</h2>
-                    <p className="card-text">teste</p>
+                    <p className="card-text">{heroes.map((hero)=>{
+                        return <p>Hero:  {hero.hero_id} </p>
+                    })}</p>
                 </div>
             </div>
         </div>
