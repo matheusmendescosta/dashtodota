@@ -8,25 +8,6 @@ const ContentInfo = () => {
     async function initApi() {
         let getHero = await Api.getHeroes();
         setHeroes(getHero);
-
-        const heroID = ["20","8","16"];
-        const heroSelect = heroes.filter((hero)=>{
-            const variavelHero = heroID.indexOf(hero.hero_id);
-
-            if (variavelHero !== -1){
-                return true;
-            }
-            // const heroTop = heroSelect[0];
-            // const heroMid = heroSelect[1];
-            // const heroBot = heroSelect[2];
-
-            // console.log(heroTop);
-            // console.log(heroMid);
-            console.log(heroSelect);
-        
-        })
-        // console.log(heroID);
-        // console.log(heroSelect);
     }
 
     useEffect(() => {
@@ -34,35 +15,38 @@ const ContentInfo = () => {
     }, []);
 
     return <div className="container px-4 px-lg-5">
-    <div className="row gx-4 gx-lg-5">
-        <div className="col-md-4 mb-5">
-            <div className="card h-100">
-                <div className="card-body">
-                    <h2 className="card-title">TOP</h2>
-                    <p className="card-text">{heroes.map((hero)=>{
-                        return <p>Hero:  {hero.hero_id} </p>
-                    })}</p>
+        <div className="row gx-4 gx-lg-5">
+            <div className="col-md-4 mb-5">
+                <div className="card h-100">
+                    <div className="card-body">
+                        <h2 className="card-title">TOP</h2>
+                        <p className="card-text">{ }</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div className="col-md-4 mb-5">
-            <div className="card h-100">
-                <div className="card-body">
-                    <h2 className="card-title">MID</h2>
-                    <p className="card-text">teste</p>
+            <div className="col-md-4 mb-5">
+                <div className="card h-100">
+                    <div className="card-body">
+                        <h2 className="card-title">MID</h2>
+                        <p className="card-text">teste</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div className="col-md-4 mb-5">
-            <div className="card h-100">
-                <div className="card-body">
-                    <h2 className="card-title">BOT</h2>
-                    <p className="card-text">{}</p>
+            <div className="col-md-4 mb-5">
+                <div className="card h-100">
+                    <div className="card-body">
+                        <h2 className="card-title">BOT</h2>
+                        <p className="card-text">{heroes.map((data) => {
+                            return (<div>
+                                <p>ID hero: {data.against_games}</p>
+                                <p>Games: {data.games}</p>
+                            </div>)
+                        })}</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 }
 
 export default ContentInfo;
