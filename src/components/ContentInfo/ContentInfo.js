@@ -28,7 +28,7 @@ const ContentInfo = () => {
                 <div className="card h-100">
                     <div className="card-body">
                         <h2 className="card-title">MID</h2>
-                        <p className="card-text">teste</p>
+                        <p className="card-text"></p>
                     </div>
                 </div>
             </div>
@@ -36,12 +36,12 @@ const ContentInfo = () => {
                 <div className="card h-100">
                     <div className="card-body">
                         <h2 className="card-title">BOT</h2>
-                        <p className="card-text">{heroes.map((data) => {
+                        {/* <p className="card-text">{heroes.map((data) => {
                             return (<div>
                                 <p>ID hero: {data.against_games}</p>
                                 <p>Games: {data.games}</p>
                             </div>)
-                        })}</p>
+                        })}</p> */}
                     </div>
                 </div>
             </div>
