@@ -1,4 +1,3 @@
 # DASHTODOTA
 
-<img src="/Util/img/dashtodota" alt="dashtodata"/>
-
+![alt tag](https://ibb.co/dQM2XHb)
