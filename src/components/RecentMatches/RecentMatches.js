@@ -28,7 +28,7 @@ const RecentMatches = () => {
       <div className="">
         <h3 className="">Partidas Recentes</h3>
       </div>
-      <div className="row gx-4 gx-lg-5">
+      <div className="row gx-4 gx-lg-5 overflow-scroll">
         <table class="table">
           <thead>
             <tr>
