@@ -18,7 +18,7 @@ const RecentMatches = () => {
     setMatches(heroimg);
     //console.log(heroimg[0].img);
   }
-
+  console.log("partidas", matches);
   useEffect(() => {
     initApi();
   }, []);
@@ -34,6 +34,7 @@ const RecentMatches = () => {
             <tr>
               <th scope="col"></th>
               <th scope="col">ID Partida</th>
+              <th scope="col">Vitoria Derrota</th>
               <th scope="col">Duração</th>
               <th scope="col">Hero</th>
               <th scope="col">kills</th>
@@ -54,6 +55,7 @@ const RecentMatches = () => {
                 <tr>
                   <th scope="row"></th>
                   <td>{data.match_id}</td>
+                  <td>{data.radiant_win ? "Vitoria" : "Derrota"}</td>
                   <td>{(data.duration / 60).toFixed(2) + "m"}</td>
                   <td>
                     <img src={"https://api.opendota.com" + data.img} width={50} />
