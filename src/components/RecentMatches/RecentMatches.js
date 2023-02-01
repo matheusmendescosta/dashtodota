@@ -7,7 +7,6 @@ const RecentMatches = () => {
   async function initApi() {
     let getMatche = await Api.getRecentMatches();
     let getHeroStats = await Api.getHeroStats();
-
     const heroimg = getMatche.map((element) => {
       const heroHeros = getHeroStats.filter((heroStats) => {
         return element.hero_id === heroStats.id;
@@ -16,9 +15,8 @@ const RecentMatches = () => {
       return element;
     });
     setMatches(heroimg);
-    //console.log(heroimg[0].img);
   }
-  console.log("partidas", matches);
+
   useEffect(() => {
     initApi();
   }, []);
