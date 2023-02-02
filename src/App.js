@@ -6,14 +6,15 @@ import Navbar from "./components/Navbar/Navbar";
 import RecentMatches from "./components/RecentMatches/RecentMatches";
 
 const App = () => {
-
-    return <div>
-        <Navbar />
-        <Header />
-        <ContentInfo />
-        <RecentMatches />
-        <Footer />
+  return (
+    <div className="flex">
+      <Navbar />
+      <Header />
+      <ContentInfo />
+      <RecentMatches />
+      <Footer />
     </div>
-}
+  );
+};
 
 export default App;
