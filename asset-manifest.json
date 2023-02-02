@@ -1,13 +1,10 @@
 {
   "files": {
-    "main.css": "/dashtodota/static/css/main.0544a971.css",
-    "main.js": "/dashtodota/static/js/main.3ae9490e.js",
+    "main.js": "/dashtodota/static/js/main.8f35e001.js",
     "index.html": "/dashtodota/index.html",
-    "main.0544a971.css.map": "/dashtodota/static/css/main.0544a971.css.map",
-    "main.3ae9490e.js.map": "/dashtodota/static/js/main.3ae9490e.js.map"
+    "main.8f35e001.js.map": "/dashtodota/static/js/main.8f35e001.js.map"
   },
   "entrypoints": [
-    "static/css/main.0544a971.css",
-    "static/js/main.3ae9490e.js"
+    "static/js/main.8f35e001.js"
   ]
 }
