@@ -50,20 +50,25 @@ const ContentInfo = () => {
 
   return (
     <>
-      <div className="container mb-36">
-        <input onChange={(e) => onChangeHandler(e.target.value)} value={text} />
+      <div className="container">
+        <label for="exampleText0" class="form-label inline-block mb-2 text-gray-700">
+          Busque por um Herói
+        </label>
+        <input
+          class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+          id="exampleText0"
+          placeholder="Digite o nome do Herói"
+          onChange={(e) => onChangeHandler(e.target.value)}
+          value={text}
+        />
       </div>
 
       {suggestion &&
         suggestion.map((sug, idx) => (
           <div className="container" key={idx} onClick={() => suggestionHandler(sug.hero_id)}>
-            {sug.hero_id && sug.hero_id.length < 5 ? sug.hero_id : ""}
+            {sug.hero_id && sug.hero_id.length < 10 ? sug.hero_id : ""}
           </div>
         ))}
-
-      <div>
-        <p></p>
-      </div>
     </>
   );
 };
