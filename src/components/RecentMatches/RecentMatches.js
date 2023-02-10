@@ -47,7 +47,7 @@ const RecentMatches = () => {
       <div className="">
         <h3 className="">Partidas Recentes</h3>
       </div>
-      <label for="exampleText0" className="form-label inline-block mb-2 text-gray-700">
+      {/* <label for="exampleText0" className="form-label inline-block mb-2 text-gray-700">
         Busque por uma partida
       </label>
       <input
@@ -56,7 +56,7 @@ const RecentMatches = () => {
         placeholder="Digite o nome do Herói para encontrar as últimas partidas"
         onChange={(e) => onChangeHandler(e.target.value)}
         value={search}
-      />
+      /> */}
       <div className="row gx-4 gx-lg-5 overflow-scroll">
         <table class="table">
           <thead>

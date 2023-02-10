@@ -21,6 +21,7 @@ const ContentInfo = () => {
   const [heroes, setHeroes] = useState([]);
   const [text, setText] = useState("");
   const [suggestion, setSugestion] = useState([]);
+  const [heroSelected, setHeroSelected] = useState([]);
 
   async function initApi() {
     let getHero = await Api.getHeroes();
@@ -55,12 +56,7 @@ const ContentInfo = () => {
     setText(text);
   };
 
-  const suggestionHandler = (text) => {
-    setText(text);
-    setSugestion([]);
-  };
-
-  console.log(suggestion);
+  console.log(heroSelected);
 
   return (
     <div className="container">
@@ -79,7 +75,7 @@ const ContentInfo = () => {
         suggestion.map((sug, idx) => (
           <>
             <div className="container">
-              <div className="p-2 " key={idx} onClick={() => suggestionHandler(sug.hero_id)}>
+              <div className="p-2 " key={idx} onClick={() => setHeroSelected(sug.hero_id)}>
                 {sug.hero_id && sug.hero_id.length < 20 ? sug.hero_id : ""}
               </div>
             </div>
