@@ -84,7 +84,7 @@ const RecentMatches = () => {
                 <tr>
                   <th scope="row"></th>
                   <td>{data.hero_id}</td>
-                  <td>{data.radiant_win ? "Vitoria" : "Derrota"}</td>
+                  <td>{data.radiant_win ? "Derrota" : "Vitoria"}</td>
                   <td>{(data.duration / 60).toFixed(2) + "m"}</td>
                   <td>
                     <img src={"https://api.opendota.com" + data.img} width={50} />
